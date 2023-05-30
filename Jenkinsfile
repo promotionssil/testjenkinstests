@@ -51,7 +51,7 @@ pipeline {
       ])
 
 
-      archiveArtifacts artifacts: 'results/chrome/*.xml, results/chrome/*.html, results/chrome/*.png', fingerprint: true
+      archiveArtifacts artifacts: '*.xml, *.html, *.png', fingerprint: true
 
       
       cleanWs()
