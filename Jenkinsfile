@@ -28,7 +28,7 @@ pipeline {
             # Print Chrome version
             # google-chrome --version
             # Launch Robot Tests with Chrome
-            robot testdemo1.robot  -d results/chrome --log log_chrome.html --output output_chrome.xml --report report_chrome.html cases/JTI/TNR
+            robot tests\testdemo1.robot  -d results/chrome --log log_chrome.html --output output_chrome.xml --report report_chrome.html cases/JTI/TNR
             '''
           }
         }
