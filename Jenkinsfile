@@ -31,7 +31,7 @@ pipeline {
     always {
       step([
         $class : 'RobotPublisher',
-        outputPath : '',
+        outputPath : '.',
         outputFileName : "output_chrome.xml",
         disableArchiveOutput : false,
         passThreshold : 100,
