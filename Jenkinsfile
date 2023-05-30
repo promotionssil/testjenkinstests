@@ -6,16 +6,7 @@ pipeline {
 
  
   stages {
-    stage('Install Libraries') {
-      steps {
-        sh '''
-        # Install libraries
-	    pip install --upgrade pip
-	    pip install -r requirements.txt
-	    ls -al
-	    '''
-      }
-    }
+
 
     stage('Execute Tests') {
       parallel {
@@ -40,7 +31,7 @@ pipeline {
     always {
       step([
         $class : 'RobotPublisher',
-        outputPath : '*',
+        outputPath : '',
         outputFileName : "output_chrome.xml",
         disableArchiveOutput : false,
         passThreshold : 100,
