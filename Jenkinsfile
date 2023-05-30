@@ -1,9 +1,9 @@
 pipeline {
-  agent {
+
 
 		agent any
-	}
-  }
+
+
  
   stages {
     stage('Install Libraries') {
