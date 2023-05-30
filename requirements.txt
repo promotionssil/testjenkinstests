@@ -1,0 +1,10 @@
+requests
+robotframework
+robotframework-requests
+robotframework-seleniumlibrary
+selenium
+# simplejson
+robotframework-jsonlibrary
+robotframework-imaplibrary2
+# robotframework-dependencylibrary
+# webdriver-manager

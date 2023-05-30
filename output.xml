@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1 (Python 3.8.10 on win32)" generated="20220410 22:39:09.024" rpa="false" schemaversion="2">
+<suite id="s1" name="Testdemo2" source="c:\Users\dave\PycharmProjects\pythonProject\tests\testdemo2.robot">
+<test id="s1-t1" name="Validate Unsuccesful Login">
+<kw name="open browser with mortgage payement url" library="resources" type="SETUP">
+<kw name="Create Webdriver">
+<arg>Chrome</arg>
+<arg>executable_path=C:/Users/dave/Downloads/robot chrome driver/chromedriver</arg>
+<msg timestamp="20220410 22:39:09.621" level="FAIL">No keyword with name 'Create Webdriver' found.</msg>
+<status status="FAIL" starttime="20220410 22:39:09.619" endtime="20220410 22:39:09.773"/>
+</kw>
+<kw name="GO To">
+<arg>${URL}</arg>
+<status status="NOT RUN" starttime="20220410 22:39:09.787" endtime="20220410 22:39:09.788"/>
+</kw>
+<status status="FAIL" starttime="20220410 22:39:09.598" endtime="20220410 22:39:09.793"/>
+</kw>
+<kw name="Close Browser Session" library="resources" type="TEARDOWN">
+<kw name="Close Browser">
+<msg timestamp="20220410 22:39:09.813" level="FAIL">No keyword with name 'Close Browser' found.</msg>
+<status status="FAIL" starttime="20220410 22:39:09.812" endtime="20220410 22:39:09.814"/>
+</kw>
+<status status="FAIL" starttime="20220410 22:39:09.800" endtime="20220410 22:39:09.816">No keyword with name 'Close Browser' found.</status>
+</kw>
+<status status="FAIL" starttime="20220410 22:39:09.592" endtime="20220410 22:39:09.819">Setup failed:
+No keyword with name 'Create Webdriver' found.
+
+Also teardown failed:
+No keyword with name 'Close Browser' found.</status>
+</test>
+<doc>validate login form</doc>
+<status status="FAIL" starttime="20220410 22:39:09.092" endtime="20220410 22:39:09.832"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Testdemo2">Testdemo2</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20220410 22:39:09.502" level="ERROR">Error in file 'c:\Users\dave\PycharmProjects\pythonProject\tests\testdemo2.robot' on line 3: Importing library 'SeleniumLibrary' failed: ModuleNotFoundError: No module named 'SeleniumLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  c:\Users\dave\.vscode\extensions\robocorp.robotframework-lsp-0.44.0\src\robotframework_debug_adapter
+  C:\Users\dave\PycharmProjects\pythonProject
+  c:\Users\dave\.vscode\extensions\robocorp.robotframework-lsp-0.44.0\src
+  c:\Users\dave\.vscode\extensions\robocorp.robotframework-lsp-0.44.0\src\robotframework_ls\vendored
+  C:\Users\dave\AppData\Local\robocorp\holotree\b1f3c244e_5a75593b\python38.zip
+  C:\Users\dave\AppData\Local\robocorp\holotree\b1f3c244e_5a75593b\DLLs
+  C:\Users\dave\AppData\Local\robocorp\holotree\b1f3c244e_5a75593b\lib
+  C:\Users\dave\AppData\Local\robocorp\holotree\b1f3c244e_5a75593b
+  C:\Users\dave\AppData\Local\robocorp\holotree\b1f3c244e_5a75593b\lib\site-packages
+  C:\Users\dave\AppData\Local\robocorp\holotree\b1f3c244e_5a75593b\lib\site-packages\win32
+  C:\Users\dave\AppData\Local\robocorp\holotree\b1f3c244e_5a75593b\lib\site-packages\win32\lib
+  C:\Users\dave\AppData\Local\robocorp\holotree\b1f3c244e_5a75593b\lib\site-packages\Pythonwin</msg>
+<msg timestamp="20220410 22:39:09.563" level="ERROR">Error in file 'c:\Users\dave\PycharmProjects\pythonProject\tests\resources.robot' on line 4: Importing library 'SeleniumLibrary' failed: ModuleNotFoundError: No module named 'SeleniumLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  c:\Users\dave\.vscode\extensions\robocorp.robotframework-lsp-0.44.0\src\robotframework_debug_adapter
+  C:\Users\dave\PycharmProjects\pythonProject
+  c:\Users\dave\.vscode\extensions\robocorp.robotframework-lsp-0.44.0\src
+  c:\Users\dave\.vscode\extensions\robocorp.robotframework-lsp-0.44.0\src\robotframework_ls\vendored
+  C:\Users\dave\AppData\Local\robocorp\holotree\b1f3c244e_5a75593b\python38.zip
+  C:\Users\dave\AppData\Local\robocorp\holotree\b1f3c244e_5a75593b\DLLs
+  C:\Users\dave\AppData\Local\robocorp\holotree\b1f3c244e_5a75593b\lib
+  C:\Users\dave\AppData\Local\robocorp\holotree\b1f3c244e_5a75593b
+  C:\Users\dave\AppData\Local\robocorp\holotree\b1f3c244e_5a75593b\lib\site-packages
+  C:\Users\dave\AppData\Local\robocorp\holotree\b1f3c244e_5a75593b\lib\site-packages\win32
+  C:\Users\dave\AppData\Local\robocorp\holotree\b1f3c244e_5a75593b\lib\site-packages\win32\lib
+  C:\Users\dave\AppData\Local\robocorp\holotree\b1f3c244e_5a75593b\lib\site-packages\Pythonwin</msg>
+</errors>
+</robot>
